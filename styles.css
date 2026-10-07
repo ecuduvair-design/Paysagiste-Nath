@@ -162,6 +162,72 @@ em { font-weight: 500; }
 .quiz-restart { border: 0; border-bottom: 1px solid var(--ink); background: none; padding: 0 0 4px; color: var(--ink); font-size: 8px; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
 @keyframes resultIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 
+.coastal-section { background: #f2eee5; overflow: hidden; }
+.coastal-heading { display: grid; grid-template-columns: 1.2fr .8fr; gap: 9vw; align-items: end; }
+.coastal-heading h2 { font-size: clamp(55px, 6.2vw, 96px); }
+.coastal-intro > p { margin: 0 0 28px; color: #647168; font-size: 13px; line-height: 1.85; max-width: 470px; }
+.coastal-specs { display: flex; flex-wrap: wrap; gap: 8px; }
+.coastal-specs span { border: 1px solid var(--line); border-radius: 30px; padding: 8px 12px; font-size: 8px; letter-spacing: .11em; text-transform: uppercase; }
+.coastal-stage { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(300px, .7fr); margin: 0 4vw; min-height: 720px; }
+.coastal-hero { background: linear-gradient(0deg, rgba(25,45,36,.32), transparent 52%), url("assets/terrasse-mer-4.webp") center/cover no-repeat; position: relative; }
+.coastal-caption { position: absolute; left: 32px; bottom: 30px; color: white; display: flex; flex-direction: column; gap: 5px; }
+.coastal-caption span { font-size: 8px; letter-spacing: .16em; text-transform: uppercase; opacity: .7; }
+.coastal-caption strong { font-family: Georgia, "Times New Roman", serif; font-size: 29px; font-weight: 500; }
+.coastal-plan { background: var(--ink); color: white; padding: 54px 38px; }
+.coastal-plan .eyebrow { color: rgba(255,255,255,.62); }
+.coastal-plan ol { list-style: none; padding: 0; margin: 50px 0 0; }
+.coastal-plan li { display: grid; grid-template-columns: 28px 1fr; gap: 13px; border-top: 1px solid rgba(255,255,255,.16); padding: 20px 0; }
+.coastal-plan li:last-child { border-bottom: 1px solid rgba(255,255,255,.16); }
+.coastal-plan li > span { font-size: 8px; color: #d29a72; padding-top: 4px; }
+.coastal-plan li div { display: flex; flex-direction: column; gap: 7px; }
+.coastal-plan li strong { font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: 17px; }
+.coastal-plan li small { color: rgba(255,255,255,.55); font-size: 10px; line-height: 1.55; }
+.coastal-recipe { display: grid; grid-template-columns: .6fr 1.4fr; gap: 7vw; align-items: start; }
+.coastal-recipe-title h3, .coastal-selection h3 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(36px, 4vw, 61px); font-weight: 500; line-height: 1.05; margin: 0; }
+.coastal-recipe-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+.recipe-card { padding: 28px 28px 35px 0; border-bottom: 1px solid var(--line); position: relative; }
+.recipe-card:nth-child(odd) { border-right: 1px solid var(--line); }
+.recipe-card:nth-child(even) { padding-left: 28px; }
+.recipe-card > span { position: absolute; right: 18px; top: 18px; color: #89948d; font-size: 8px; }
+.recipe-icon { width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%; display: grid; place-items: center; margin-bottom: 30px; }
+.recipe-icon::before { font-family: Georgia, "Times New Roman", serif; font-size: 25px; color: var(--terracotta); }
+.recipe-icon.waves::before { content: "≋"; }
+.recipe-icon.parasol::before { content: "⌒"; transform: rotate(-12deg); }
+.recipe-icon.leaf::before { content: "◊"; }
+.recipe-icon.lantern::before { content: "◇"; }
+.recipe-card h4 { font-family: Georgia, "Times New Roman", serif; font-size: 21px; font-weight: 500; margin: 0 0 11px; }
+.recipe-card p { margin: 0; color: #65736b; font-size: 10px; line-height: 1.7; }
+.coastal-palette { margin: 0 8vw 120px; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.coastal-palette > div { min-width: 0; padding: 18px 14px; display: grid; grid-template-columns: 30px 1fr; grid-template-rows: auto auto; column-gap: 10px; border-right: 1px solid var(--line); }
+.coastal-palette > div:last-child { border-right: 0; }
+.swatch { width: 30px; height: 30px; border-radius: 50%; grid-row: span 2; }
+.swatch.chalk { background: #e8e3d8; border: 1px solid var(--line); }
+.swatch.sand { background: #cbb895; }
+.swatch.clay { background: #a95d42; }
+.swatch.sea { background: #708a8a; }
+.swatch.olivegreen { background: #526151; }
+.coastal-palette strong { font-size: 9px; align-self: end; }
+.coastal-palette small { color: #7e8982; font-size: 8px; align-self: start; }
+.coastal-gallery { padding: 0 4vw 120px; display: grid; grid-template-columns: 1.45fr .75fr; gap: 14px; }
+.coastal-gallery figure { margin: 0; position: relative; overflow: hidden; }
+.coastal-gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+.coastal-gallery figure:hover img { transform: scale(1.025); }
+.coastal-gallery-main { height: 720px; }
+.coastal-gallery-side { display: grid; grid-template-rows: 1fr 1fr; gap: 14px; }
+.coastal-gallery figcaption { position: absolute; left: 22px; right: 22px; bottom: 20px; color: white; display: flex; flex-direction: column; gap: 5px; text-shadow: 0 2px 15px rgba(0,0,0,.5); }
+.coastal-gallery figcaption span { font-size: 8px; letter-spacing: .14em; text-transform: uppercase; }
+.coastal-gallery figcaption strong { font-family: Georgia, "Times New Roman", serif; font-size: 22px; font-weight: 500; }
+.coastal-selection { background: #ded7c8; display: grid; grid-template-columns: .7fr 1.3fr; gap: 8vw; }
+.coastal-selection-copy > p { color: #5f6e65; font-size: 11px; line-height: 1.8; max-width: 420px; margin: 28px 0 0; }
+.coastal-plant-list { display: grid; grid-template-columns: 1fr 1fr; align-content: start; }
+.coastal-plant-list > div { display: grid; grid-template-columns: 32px 1fr; grid-template-rows: auto auto; padding: 18px 10px; border-top: 1px solid rgba(32,56,45,.2); }
+.coastal-plant-list > div:nth-child(odd) { border-right: 1px solid rgba(32,56,45,.2); }
+.coastal-plant-list span { grid-row: span 2; color: #8b7564; font-size: 8px; padding-top: 3px; }
+.coastal-plant-list strong { font-family: Georgia, "Times New Roman", serif; font-size: 18px; font-weight: 500; }
+.coastal-plant-list small { color: #6e7b73; font-size: 9px; margin-top: 3px; }
+.coastal-cta { padding: 45px 8vw; display: flex; align-items: center; justify-content: space-between; gap: 30px; background: #f2eee5; }
+.coastal-cta > span { font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-style: italic; max-width: 470px; line-height: 1.4; }
+
 .terrace-section { background: var(--ink); color: white; padding-bottom: 110px; }
 .terrace-intro { display: grid; grid-template-columns: .5fr 1fr 1fr; align-items: end; padding-bottom: 75px; }
 .terrace-intro .eyebrow { align-self: start; }
@@ -249,6 +315,10 @@ footer > .footer-brand { width: 50%; }
   .exotic-card { grid-template-columns: 1fr; }
   .exotic-photo { min-height: 370px; }
   .quiz-section { gap: 5vw; }
+  .coastal-stage { grid-template-columns: 1.35fr .65fr; margin: 0; }
+  .coastal-recipe { grid-template-columns: 1fr; }
+  .coastal-recipe-title { max-width: 500px; }
+  .coastal-gallery-main { height: 620px; }
   .terrace-intro { grid-template-columns: 1fr 1fr; gap: 40px; }
   .terrace-intro .eyebrow { grid-column: span 2; }
   .terrace-gallery { grid-template-columns: 1fr 1fr; }
@@ -290,6 +360,23 @@ footer > .footer-brand { width: 50%; }
   .quiz-section { grid-template-columns: 1fr; gap: 55px; }
   .quiz-panel { padding: 32px 22px; min-height: 510px; }
   .quiz-options { grid-template-columns: 1fr; }
+  .coastal-heading { grid-template-columns: 1fr; gap: 30px; }
+  .coastal-stage { grid-template-columns: 1fr; min-height: 0; }
+  .coastal-hero { height: 590px; }
+  .coastal-plan { padding: 45px 7vw; }
+  .coastal-plan ol { margin-top: 25px; }
+  .coastal-recipe-grid { grid-template-columns: 1fr; }
+  .recipe-card:nth-child(odd) { border-right: 0; }
+  .recipe-card:nth-child(even) { padding-left: 0; }
+  .coastal-palette { margin: 0 6vw 75px; grid-template-columns: 1fr; }
+  .coastal-palette > div { border-right: 0; border-bottom: 1px solid var(--line); }
+  .coastal-palette > div:last-child { border-bottom: 0; }
+  .coastal-gallery { display: flex; overflow-x: auto; padding: 0 6vw 75px; scroll-snap-type: x mandatory; }
+  .coastal-gallery-main, .coastal-gallery-side figure { min-width: 82vw; height: 540px; scroll-snap-align: center; }
+  .coastal-gallery-side { display: flex; gap: 14px; }
+  .coastal-gallery-side figure { flex: 0 0 82vw; }
+  .coastal-selection { grid-template-columns: 1fr; gap: 45px; }
+  .coastal-cta { align-items: flex-start; flex-direction: column; }
   .terrace-intro { display: block; }
   .terrace-intro h2 { font-size: 62px; margin-bottom: 30px; }
   .terrace-gallery { display: flex; overflow-x: auto; padding: 0 6vw 12px; scroll-snap-type: x mandatory; }
@@ -314,6 +401,9 @@ footer > .footer-brand { width: 50%; }
   .exotic-card { grid-template-columns: 1fr; }
   .exotic-photo { min-height: 340px; }
   .exotic-content { min-height: 445px; }
+  .coastal-hero { height: 480px; }
+  .coastal-plant-list { grid-template-columns: 1fr; }
+  .coastal-plant-list > div:nth-child(odd) { border-right: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
